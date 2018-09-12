@@ -12,6 +12,6 @@ public class Dawg : Animal {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        print("Oh shoot I'm an animal too");
 	}
 }
