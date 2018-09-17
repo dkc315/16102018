@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 235187118}
   - component: {fileID: 235187117}
   - component: {fileID: 235187116}
+  - component: {fileID: 235187115}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -132,6 +133,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!143 &235187115
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 235187114}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &235187116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,9 +161,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf65f1e6ba11d1e4f974024328bc8dc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Character: {fileID: 235187115}
   MoveSpeed: {x: 0.2, y: 0.2, z: 0.2}
   RotateSpeed: {x: 0, y: -1, z: 1}
-  Speed: 500
+  Speed: 3
 --- !u!65 &235187117
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -306,6 +325,7 @@ GameObject:
   - component: {fileID: 1568774345}
   - component: {fileID: 1568774344}
   - component: {fileID: 1568774343}
+  - component: {fileID: 1568774348}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -324,9 +344,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf65f1e6ba11d1e4f974024328bc8dc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Character: {fileID: 1568774348}
   MoveSpeed: {x: 0.2, y: 0.2, z: 0.2}
   RotateSpeed: {x: -1, y: 1, z: 0}
-  Speed: 500
+  Speed: 3
 --- !u!65 &1568774344
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -394,6 +415,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!143 &1568774348
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1568774342}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1743166838
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,6 +444,7 @@ GameObject:
   - component: {fileID: 1743166841}
   - component: {fileID: 1743166840}
   - component: {fileID: 1743166839}
+  - component: {fileID: 1743166844}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -424,9 +463,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf65f1e6ba11d1e4f974024328bc8dc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Character: {fileID: 1743166844}
   MoveSpeed: {x: 0.2, y: 0.2, z: 0.2}
   RotateSpeed: {x: 0, y: 1, z: -1}
-  Speed: 500
+  Speed: 3
 --- !u!65 &1743166840
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -494,6 +534,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!143 &1743166844
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1743166838}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1932369801
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,6 +563,7 @@ GameObject:
   - component: {fileID: 1932369804}
   - component: {fileID: 1932369803}
   - component: {fileID: 1932369802}
+  - component: {fileID: 1932369807}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -524,9 +582,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf65f1e6ba11d1e4f974024328bc8dc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Character: {fileID: 1932369807}
   MoveSpeed: {x: 0.2, y: 0.2, z: 0.2}
   RotateSpeed: {x: 1, y: -1, z: 0}
-  Speed: 500
+  Speed: 3
 --- !u!65 &1932369803
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -594,6 +653,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!143 &1932369807
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1932369801}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2054599468
 GameObject:
   m_ObjectHideFlags: 0
