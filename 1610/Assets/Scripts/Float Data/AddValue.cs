@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Events;
 
 [CreateAssetMenu]
@@ -18,19 +20,19 @@ public class AddValue : ScriptableObject
     {
         ValueObj.Value += data.Value;
 
-        if (ValueObj.Value <= 0)
+        if (ValueObj.Value >= 1)
         {
             Event.Invoke();
         }
 
         if (ValueObj.Value >= MaxValue.Value)
         {
-            Event.Invoke();
+            
         }
 
         if (ValueObj.Value <= MinValue.Value)
         {
-            Event.Invoke();
+            
         }
     }
 }
