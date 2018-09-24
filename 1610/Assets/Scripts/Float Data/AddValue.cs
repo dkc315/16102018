@@ -18,21 +18,26 @@ public class AddValue : ScriptableObject
 
     public void AddValueToObject(FloatData data)
     {
-        ValueObj.Value += data.Value;
-
-        if (ValueObj.Value >= 1)
+        
+        // Range
+        if (ValueObj.Value >= MinValue.Value)
         {
-            Event.Invoke();
+          if (ValueObj.Value <= MaxValue.Value)
+            {
+               ValueObj.Value += data.Value;            
+            }  
         }
 
+        // Cap
         if (ValueObj.Value >= MaxValue.Value)
         {
-            
+            ValueObj.Value = MaxValue.Value;
         }
-
+        
+        // Floor
         if (ValueObj.Value <= MinValue.Value)
         {
-            
+            ValueObj.Value = MinValue.Value;
         }
     }
 }
