@@ -5,6 +5,7 @@ public class MouseEventBehaviour : MonoBehaviour
 {
     public UnityEvent MouseDown;
     public UnityEvent MouseUp;
+    public UnityEvent MouseDrag;
 
     private void OnMouseDown()
     {
@@ -15,5 +16,11 @@ public class MouseEventBehaviour : MonoBehaviour
     {
         MouseUp.Invoke();
     }
+
+    private void OnMouseDrag()
+    {
+        MouseDrag.Invoke();
+    }
+    
 }
 

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: AddMoney
   m_EditorClassIdentifier: 
   ValueObj: {fileID: 11400000, guid: 63dc8fa5faf59734d9cef2ec832f9cb4, type: 2}
-  MaxValue: {fileID: 11400000, guid: 63dc8fa5faf59734d9cef2ec832f9cb4, type: 2}
-  MinValue: {fileID: 11400000, guid: 63dc8fa5faf59734d9cef2ec832f9cb4, type: 2}
+  MaxValue: {fileID: 11400000, guid: 4ffdabd4764d34c4eb21da31b17721fd, type: 2}
+  MinValue: {fileID: 11400000, guid: ad5fd24840689794dae8d5866adca38a, type: 2}
   Event:
     m_PersistentCalls:
       m_Calls:

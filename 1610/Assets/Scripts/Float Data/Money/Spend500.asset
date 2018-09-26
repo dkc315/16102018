@@ -9,6 +9,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47691817959c53041a8cfdaece6f8544, type: 3}
-  m_Name: AmmoTotal
+  m_Name: Spend500
   m_EditorClassIdentifier: 
-  Value: 30
+  Value: -500
