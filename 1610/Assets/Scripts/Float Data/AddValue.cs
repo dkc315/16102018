@@ -27,7 +27,6 @@ public class AddValue : ScriptableObject
             if (ValueObj.Value <= MaxValue.Value)
             {
                 ValueObj.Value += data.Value;
-                MinMaxReset();
             }
         }
        
@@ -43,7 +42,6 @@ public class AddValue : ScriptableObject
                 ValueObj.Value -= data.Value;
             }
         }
-        MinMaxReset();
     }
     public void MultiplyValueByObject(FloatData data)
     {
@@ -56,7 +54,6 @@ public class AddValue : ScriptableObject
                 ValueObj.Value *= data.Value;
             }
         }
-        MinMaxReset();
     }
     public void DivideValueByObject(FloatData data)
     {
@@ -69,22 +66,21 @@ public class AddValue : ScriptableObject
                 ValueObj.Value /= data.Value;
             }
         }
-        MinMaxReset();
     }
 
-    // MinMax Setting After Changes
-    public void MinMaxReset()
+    void Update()
     {
-        // Cap
-        if (ValueObj.Value >= MaxValue.Value)
-        {
-            ValueObj.Value = MaxValue.Value;
-        }
+          // Cap
+           if (ValueObj.Value >= MaxValue.Value)
+           {
+               ValueObj.Value = MaxValue.Value;
+           }
 
-        // Floor
-        if (ValueObj.Value <= MinValue.Value)
-        {
-            ValueObj.Value = MinValue.Value;
-        }
-    }
+           // Floor
+           if (ValueObj.Value <= MinValue.Value)
+           {
+                ValueObj.Value = MinValue.Value;
+           }
+        
+    } 
 }

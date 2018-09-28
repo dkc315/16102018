@@ -266,11 +266,11 @@ MonoBehaviour:
   Trigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 3237460abd2cd2c4d9ce9feb048889e4, type: 2}
+      - m_Target: {fileID: 11400000, guid: 1afa8e1cd1a0c3847bfbd4a3473ed092, type: 2}
         m_MethodName: AddValueToObject
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: f4eb8de9733af4845b06174e45e24777,
+          m_ObjectArgument: {fileID: 11400000, guid: 422c7fa183aca9a4ba7857c4847eddc0,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
           m_IntArgument: 0
@@ -386,11 +386,11 @@ MonoBehaviour:
   Trigger:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 158152965d5ea0241bf8ff80dc50fff7, type: 2}
-        m_MethodName: OnPowerUp
+      - m_Target: {fileID: 11400000, guid: 1afa8e1cd1a0c3847bfbd4a3473ed092, type: 2}
+        m_MethodName: AddValueToObject
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 68a6c74f60382de4ca0e51b685173ecc,
+          m_ObjectArgument: {fileID: 11400000, guid: 3cc8187e0ae193a41a3fac7b49155d1e,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: FloatData, Assembly-CSharp
           m_IntArgument: 0
