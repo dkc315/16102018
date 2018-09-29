@@ -27,6 +27,7 @@ public class AddValue : ScriptableObject
             if (ValueObj.Value <= MaxValue.Value)
             {
                 ValueObj.Value += data.Value;
+                Update();
             }
         }
        
@@ -40,6 +41,7 @@ public class AddValue : ScriptableObject
             if (ValueObj.Value <= MaxValue.Value)
             {
                 ValueObj.Value -= data.Value;
+                Update();
             }
         }
     }
@@ -52,6 +54,7 @@ public class AddValue : ScriptableObject
             if (ValueObj.Value <= MaxValue.Value)
             {
                 ValueObj.Value *= data.Value;
+                Update();
             }
         }
     }
@@ -64,6 +67,7 @@ public class AddValue : ScriptableObject
             if (ValueObj.Value <= MaxValue.Value)
             {
                 ValueObj.Value /= data.Value;
+                Update();
             }
         }
     }
