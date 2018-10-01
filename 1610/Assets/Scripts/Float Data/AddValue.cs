@@ -8,83 +8,63 @@ using UnityEngine.Events;
 public class AddValue : ScriptableObject
 {
 
-    public FloatData ValueObj;
-    public FloatData MaxValue;
-    public FloatData MinValue;
-
-    public UnityEvent Event;
-    public UnityEvent EventMax;
-    public UnityEvent EventMin;
-
+    public FloatData ValueObj, ValueTar, MinValue, MaxValue;
+    public UnityEvent Event, EventMin, EventMax;
 
     // Math
     public void AddValueToObject(FloatData data)
     {
-
         // Range
-        if (ValueObj.Value >= MinValue.Value)
+        if (ValueObj.Value >= MinValue.Value && ValueObj.Value <= MaxValue.Value)
         {
-            if (ValueObj.Value <= MaxValue.Value)
-            {
                 ValueObj.Value += data.Value;
+
                 Update();
-            }
         }
-       
     }
     public void SubtractValueFromObject(FloatData data)
     {
-
         // Range
-        if (ValueObj.Value >= MinValue.Value)
+        if (ValueObj.Value >= MinValue.Value && ValueObj.Value <= MaxValue.Value)
         {
-            if (ValueObj.Value <= MaxValue.Value)
-            {
                 ValueObj.Value -= data.Value;
+
                 Update();
-            }
         }
     }
     public void MultiplyValueByObject(FloatData data)
     {
-
         // Range
-        if (ValueObj.Value >= MinValue.Value)
+        if (ValueObj.Value >= MinValue.Value && ValueObj.Value <= MaxValue.Value)
         {
-            if (ValueObj.Value <= MaxValue.Value)
-            {
                 ValueObj.Value *= data.Value;
+
                 Update();
-            }
         }
     }
     public void DivideValueByObject(FloatData data)
     {
-
         // Range
-        if (ValueObj.Value >= MinValue.Value)
+        if (ValueObj.Value >= MinValue.Value && ValueObj.Value <= MaxValue.Value)
         {
-            if (ValueObj.Value <= MaxValue.Value)
-            {
                 ValueObj.Value /= data.Value;
+
                 Update();
-            }
         }
     }
 
     void Update()
     {
-          // Cap
-           if (ValueObj.Value >= MaxValue.Value)
-           {
-               ValueObj.Value = MaxValue.Value;
-           }
+        // Cap
+        if (ValueTar.Value>= ValueObj.Value)
+        {
+            ValueTar.Value = ValueObj.Value;
+        }
 
-           // Floor
-           if (ValueObj.Value <= MinValue.Value)
-           {
-                ValueObj.Value = MinValue.Value;
-           }
-        
-    } 
+        // Floor
+        if (ValueTar.Value <= ValueObj.Value)
+        {
+            ValueTar.Value = ValueObj.Value;
+        }
+    }
 }
