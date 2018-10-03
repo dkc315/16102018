@@ -6,8 +6,8 @@ public class ACompB : MonoBehaviour {
 
     public NameId A, B;
 
-    void Update ()
-    {
+    public void Compare ()
+    {  
         if (A == B)
         {
             print("The Lock clicks Open");
