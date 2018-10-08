@@ -10,6 +10,7 @@
           <e p="ACompB.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
           <e p="CharacterMover.cs" t="Include" />
+          <e p="DestroyObject.cs" t="Include" />
           <e p="Float Data" t="Include">
             <e p="AddValue.cs" t="Include" />
             <e p="FloatData.cs" t="Include" />
@@ -18,6 +19,11 @@
             </e>
           </e>
           <e p="IfStatments.cs" t="Include" />
+          <e p="Instancing.cs" t="Include" />
+          <e p="Inventory" t="Include">
+            <e p="InventoryController.cs" t="Include" />
+            <e p="InventoryItem.cs" t="Include" />
+          </e>
           <e p="Misc" t="Include">
             <e p="AddMoney.cs" t="Include" />
             <e p="Move.cs" t="Include" />

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class InventoryItem : MonoBehaviour
+public class InventoryItem : ScriptableObject
 {
     // Noooooooooope
     public GameObject Item;
