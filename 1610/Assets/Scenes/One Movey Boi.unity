@@ -308,6 +308,12 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 114715938029526796, guid: 20ba066fbda6ea042a5343e2d7646d8e,
+        type: 2}
+      propertyPath: AltInstance
+      value: 
+      objectReference: {fileID: 1311948971019606, guid: 8ef4775df7810d542ac0d14b1f6a972e,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20ba066fbda6ea042a5343e2d7646d8e, type: 2}
   m_IsPrefabParent: 0
