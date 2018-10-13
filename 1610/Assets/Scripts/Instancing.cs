@@ -4,19 +4,15 @@ using UnityEngine;
 
 public class Instancing : MonoBehaviour
 {
-
-	public GameObject Instance;
-	public GameObject AltInstance;
-	 public FloatData Consumable;
-    public FloatData ConsumeRate;
+	public GameObject Instance, AltInstance;
+	public FloatData Consumable, AltConsumable, ConsumeRate, AltConsumeRate;
     public float WaitTime;
    
-
 	void Update ()
 	{
         if (Input.GetMouseButtonDown(0))
         {
-            if (Consumable.Value >= 1)
+            if (Consumable.Value >= ConsumeRate.Value)
             {
                 Instantiate(Instance, transform.position, transform.rotation);
                 Consumable.Value = Consumable.Value - ConsumeRate.Value;
@@ -25,10 +21,10 @@ public class Instancing : MonoBehaviour
 
 		if (Input.GetMouseButton(1))
 		{
-            if (Consumable.Value >= 1)
+            if (AltConsumable.Value >= AltConsumeRate.Value)
             {
                 Instantiate(AltInstance, transform.position, transform.rotation);
-                Consumable.Value = Consumable.Value - ConsumeRate.Value;
+                AltConsumable.Value = AltConsumable.Value - AltConsumeRate.Value;
             }
         }
 	}
