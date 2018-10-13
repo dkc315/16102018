@@ -162,6 +162,18 @@ Prefab:
       value: 
       objectReference: {fileID: 1209200125632104, guid: dfcdbe5d17e33a944b3d39b78145cc32,
         type: 2}
+    - target: {fileID: 114715938029526796, guid: 20ba066fbda6ea042a5343e2d7646d8e,
+        type: 2}
+      propertyPath: Consumable
+      value: 
+      objectReference: {fileID: 11400000, guid: 07a080389864e7d4f8499bac7a9868a8,
+        type: 2}
+    - target: {fileID: 114715938029526796, guid: 20ba066fbda6ea042a5343e2d7646d8e,
+        type: 2}
+      propertyPath: ConsumeRate
+      value: 
+      objectReference: {fileID: 11400000, guid: 05bfc2538162db348961d7e63579d431,
+        type: 2}
     m_RemovedComponents:
     - {fileID: 114143897077665972, guid: 20ba066fbda6ea042a5343e2d7646d8e, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 20ba066fbda6ea042a5343e2d7646d8e, type: 2}
