@@ -12,6 +12,7 @@
           <e p="CharacterMover.cs" t="Include" />
           <e p="CollisionInstance.cs" t="Include" />
           <e p="DestroyObject.cs" t="Include" />
+          <e p="DestroyOnTrigger.cs" t="Include" />
           <e p="Float Data" t="Include">
             <e p="AddValue.cs" t="Include" />
             <e p="FloatData.cs" t="Include" />
@@ -37,6 +38,10 @@
           <e p="MouseEventBehaviour.cs" t="Include" />
           <e p="NameId" t="Include">
             <e p="NameId.cs" t="Include" />
+          </e>
+          <e p="ObjectCollection.cs" t="Include" />
+          <e p="ObjectCollections" t="Include">
+            <e p="AddToCollection.cs" t="Include" />
           </e>
           <e p="Things I Don't Care About" t="Include">
             <e p="Animal.cs" t="Include" />

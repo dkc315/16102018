@@ -8,7 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47691817959c53041a8cfdaece6f8544, type: 3}
-  m_Name: AmmoTotal
+  m_Script: {fileID: 11500000, guid: 56d5ffd9127f44e42a8ed4de0205a463, type: 3}
+  m_Name: QvsMysteryInc
   m_EditorClassIdentifier: 
-  Value: 0
+  ObjectList:
+  - {fileID: 11400000, guid: 4ec895919ff976241b2f76a692e2b8c4, type: 2}
+  - {fileID: 11400000, guid: 17f1424f18d0432468477a6e41b47c34, type: 2}

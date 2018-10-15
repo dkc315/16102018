@@ -8,7 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47691817959c53041a8cfdaece6f8544, type: 3}
-  m_Name: AmmoTotal
+  m_Script: {fileID: 11500000, guid: 2ed032177d7245d40840f78da724ee30, type: 3}
+  m_Name: AddWeapon
   m_EditorClassIdentifier: 
-  Value: 0
+  Collection: {fileID: 11400000, guid: 5ba3eeafc9ab6da4fa61cc28295a6471, type: 2}

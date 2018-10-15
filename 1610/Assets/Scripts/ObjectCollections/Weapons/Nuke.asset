@@ -8,7 +8,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47691817959c53041a8cfdaece6f8544, type: 3}
-  m_Name: AmmoTotal
+  m_Script: {fileID: 11500000, guid: 04989939190b3694f8b71e8c443e6b35, type: 3}
+  m_Name: Nuke
   m_EditorClassIdentifier: 
-  Value: 0
