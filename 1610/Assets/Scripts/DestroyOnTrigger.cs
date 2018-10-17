@@ -11,7 +11,6 @@ public class DestroyOnTrigger : MonoBehaviour
 	IEnumerator OnTriggerEnter(Collider other)
 	{
 		yield return new WaitForSeconds(DeathTime);
-		Destroy(gameObject);
-
+        Destroy(gameObject);
 	}
 }
