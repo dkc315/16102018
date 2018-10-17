@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47691817959c53041a8cfdaece6f8544, type: 3}
   m_Name: HealthMax
   m_EditorClassIdentifier: 
-  Value: 100
+  Value: 1

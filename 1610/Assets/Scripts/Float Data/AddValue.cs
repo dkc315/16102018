@@ -8,7 +8,7 @@ using UnityEngine.Events;
 public class AddValue : ScriptableObject
 {
 
-    public FloatData ValueObj, ValueTar, MinValue, MaxValue;
+    public FloatData ValueObj, MinValue, MaxValue;
     public UnityEvent Event, EventMin, EventMax;
 
     // Math
@@ -56,15 +56,15 @@ public class AddValue : ScriptableObject
     void Update()
     {
         // Cap
-        if (ValueTar.Value>= ValueObj.Value)
+        if (ValueObj.Value >= MaxValue.Value)
         {
-            ValueTar.Value = ValueObj.Value;
+            ValueObj.Value = MaxValue.Value;
         }
 
         // Floor
-        if (ValueTar.Value <= ValueObj.Value)
+        if (ValueObj.Value <= MinValue.Value)
         {
-            ValueTar.Value = ValueObj.Value;
+            ValueObj.Value = MinValue.Value;
         }
     }
 }
