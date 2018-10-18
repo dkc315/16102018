@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\10763213\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_1610.-1530311224.00" t="ExcludeRecursive" />
-    <e p="C:\Users\10763213\Documents\1610Fall2018\1610Fall2018\1610" t="IncludeRecursive">
+    <e p="C:\Users\dkc31\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\dkc31\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_1610.1769139928.00" t="ExcludeRecursive" />
+    <e p="D:\School\DGM 1610\1610Fall2018\1610" t="IncludeRecursive">
       <e p="1610.sln" t="IncludeFlat" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -50,6 +51,7 @@
           </e>
           <e p="TriggerEventBehavior.cs" t="Include" />
           <e p="UpdateImageValue.cs" t="Include" />
+          <e p="UpdateTextValue.cs" t="Include" />
           <e p="WhatcanSeeIt.cs" t="Include" />
         </e>
       </e>

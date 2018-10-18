@@ -8,15 +8,15 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
+  m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1825389794799480}
-  m_IsPrefabParent: 1
+  m_IsPrefabAsset: 1
 --- !u!1 &1825389794799480
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 4755603937198312}
   - component: {fileID: 33575398202065680}
@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114307909801451332}
   - component: {fileID: 54251353760360652}
   - component: {fileID: 75235785551212136}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: AmmoCrate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
 --- !u!4 &4755603937198312
 Transform:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1825389794799480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -49,7 +49,7 @@ Transform:
 --- !u!23 &23961668480524320
 MeshRenderer:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1825389794799480}
   m_Enabled: 1
@@ -84,14 +84,14 @@ MeshRenderer:
 --- !u!33 &33575398202065680
 MeshFilter:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1825389794799480}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &54251353760360652
 Rigidbody:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1825389794799480}
   serializedVersion: 2
@@ -106,7 +106,7 @@ Rigidbody:
 --- !u!65 &65825607447066708
 BoxCollider:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1825389794799480}
   m_Material: {fileID: 0}
@@ -118,7 +118,7 @@ BoxCollider:
 --- !u!75 &75235785551212136
 ConstantForce:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1825389794799480}
   m_Enabled: 1
@@ -129,7 +129,7 @@ ConstantForce:
 --- !u!114 &114023514218761102
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1825389794799480}
   m_Enabled: 1
@@ -162,7 +162,7 @@ MonoBehaviour:
 --- !u!114 &114307909801451332
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1825389794799480}
   m_Enabled: 1
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220c27c6c98294a45b29a76d74f33594, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeathTime: 0.1
+  DeathTime: 0.01
   RespawnTime: 5
   Renderer: {fileID: 0}
   Collider: {fileID: 0}
