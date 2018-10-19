@@ -44,6 +44,7 @@
             <e p="AddToCollection.cs" t="Include" />
           </e>
           <e p="RespawnTrigger.cs" t="Include" />
+          <e p="TextPop.cs" t="Include" />
           <e p="Things I Don't Care About" t="Include">
             <e p="Animal.cs" t="Include" />
             <e p="Dawg.cs" t="Include" />
