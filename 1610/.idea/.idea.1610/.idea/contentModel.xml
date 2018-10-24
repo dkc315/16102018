@@ -10,7 +10,6 @@
           <e p="ACompB.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
           <e p="CharacterMover.cs" t="Include" />
-          <e p="CollisionInstance.cs" t="Include" />
           <e p="DestroyObject.cs" t="Include" />
           <e p="Float Data" t="Include">
             <e p="AddValue.cs" t="Include" />
@@ -26,6 +25,7 @@
             <e p="InventoryItem.cs" t="Include" />
           </e>
           <e p="LocalVars.cs" t="Include" />
+          <e p="Loops.cs" t="Include" />
           <e p="Misc" t="Include">
             <e p="AddMoney.cs" t="Include" />
             <e p="Move.cs" t="Include" />
@@ -43,6 +43,7 @@
             <e p="AddToCollection.cs" t="Include" />
           </e>
           <e p="RespawnTrigger.cs" t="Include" />
+          <e p="TextInstancing.cs" t="Include" />
           <e p="TextPop.cs" t="Include" />
           <e p="Things I Don't Care About" t="Include">
             <e p="Animal.cs" t="Include" />
