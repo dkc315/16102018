@@ -8,7 +8,6 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="ACompB.cs" t="Include" />
-          <e p="CameraFollow.cs" t="Include" />
           <e p="CharacterMover.cs" t="Include" />
           <e p="DestroyObject.cs" t="Include" />
           <e p="Float Data" t="Include">
@@ -18,6 +17,7 @@
               <e p="PowerUp.cs" t="Include" />
             </e>
           </e>
+          <e p="GameStates.cs" t="Include" />
           <e p="IfStatments.cs" t="Include" />
           <e p="Instancing.cs" t="Include" />
           <e p="Inventory" t="Include">
@@ -42,14 +42,11 @@
           <e p="ObjectCollections" t="Include">
             <e p="AddToCollection.cs" t="Include" />
           </e>
+          <e p="PowerupEnum.cs" t="Include" />
           <e p="RespawnTrigger.cs" t="Include" />
-          <e p="TextInstancing.cs" t="Include" />
-          <e p="TextPop.cs" t="Include" />
-          <e p="Things I Don't Care About" t="Include">
-            <e p="Animal.cs" t="Include" />
-            <e p="Dawg.cs" t="Include" />
-            <e p="ScriptNumbaOne.cs" t="Include" />
-          </e>
+          <e p="StateMachine.cs" t="Include" />
+          <e p="SwitchStatments.cs" t="Include" />
+          <e p="TextFlash.cs" t="Include" />
           <e p="TriggerEventBehavior.cs" t="Include" />
           <e p="UpdateImageValue.cs" t="Include" />
           <e p="UpdateTextValue.cs" t="Include" />

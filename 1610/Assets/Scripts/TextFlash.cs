@@ -5,7 +5,7 @@ using System.Runtime.Remoting.Lifetime;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TextInstancing : MonoBehaviour
+public class TextFlash : MonoBehaviour
 {
     public Canvas Canvas;
     public Text Text;
@@ -13,16 +13,12 @@ public class TextInstancing : MonoBehaviour
     public string Function;
     public float Lifetime;
 
-    private void OnTriggerEnter(Collider other)
+    IEnumerator OnTriggerEnter(Collider other)
     {
         Text.text = Function + Data.Value;
-        Delay();
-    }
-
-    IEnumerator Delay()
-    {
+        Canvas.enabled = true;
         yield return new WaitForSeconds(Lifetime);
-        Text.text = "";
+        Canvas.enabled = false;
     }
    
 }
