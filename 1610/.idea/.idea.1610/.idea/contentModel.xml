@@ -44,6 +44,7 @@
           </e>
           <e p="PowerupEnum.cs" t="Include" />
           <e p="RespawnTrigger.cs" t="Include" />
+          <e p="SlowMovement.cs" t="Include" />
           <e p="StateMachine.cs" t="Include" />
           <e p="SwitchStatments.cs" t="Include" />
           <e p="TextFlash.cs" t="Include" />

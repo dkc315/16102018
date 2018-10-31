@@ -7,36 +7,35 @@ using UnityEngine.Events;
 public class StateMachine : ScriptableObject
 {
 	public GameStates.States GameState;
-	public UnityEvent Starting, Loading, Playing, Pausing, Dying, Ending;
-	/*
-	public void Run {
 
+	public UnityEvent Starting, Loading, Playing, Pausing, Dying, Ending;
+/*
+	public Run {
 		switch (GameState)
 		{
 		case GameStates.States.Starting:
-			Starting.Invoke;
-			break;
+		Starting.Invoke;
+		break;
 
 		case GameStates.States.Loading:
-			Loading.Invoke();
-			break;
+		Loading.Invoke();
+		break;
 
 		case GameStates.States.Playing:
-			Playing.Invoke();
-			break;
+		Playing.Invoke();
+		break;
 
 		case GameStates.States.Pausing:
-			Pausing.Invoke();
-			break;
+		Pausing.Invoke();
+		break;
 
 		case GameStates.States.Dying:
-			Dying.Invoke();
-			break;
+		Dying.Invoke();
+		break;
 
 		case GameStates.States.Ending:
-			Ending.Invoke();
-			break;
+		Ending.Invoke();
+		break;
 		}
-	}
+	}*/
 }
-*/

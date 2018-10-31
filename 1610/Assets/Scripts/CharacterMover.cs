@@ -6,9 +6,9 @@ public class CharacterMover : MonoBehaviour
 {
 
 	private CharacterController controller;
-	public float Gravity = 9.81f;
-	public float MoveSpeed = 5.0f;
-	public float JumpSpeed = 3.0f;
+	public float Gravity;
+	public float MoveSpeed;
+	public float JumpSpeed;
 	private Vector3 position, rotation;
 	
 	// Use this for initialization

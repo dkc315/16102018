@@ -19,6 +19,7 @@ public class TextFlash : MonoBehaviour
         Canvas.enabled = true;
         yield return new WaitForSeconds(Lifetime);
         Canvas.enabled = false;
+        
     }
    
 }
