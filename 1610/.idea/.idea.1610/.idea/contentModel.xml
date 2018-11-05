@@ -8,6 +8,8 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="ACompB.cs" t="Include" />
+          <e p="AIInstancing.cs" t="Include" />
+          <e p="BasicAI.cs" t="Include" />
           <e p="CharacterMover.cs" t="Include" />
           <e p="DestroyObject.cs" t="Include" />
           <e p="Float Data" t="Include">
