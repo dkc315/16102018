@@ -8,20 +8,13 @@ public class AIInstancing : MonoBehaviour
 	public GameObject Instance;
 	public float FireRate;
 
-	private void Start()
+	private IEnumerator Start()
 	{
-		Fire();
-	}
-
-	void Fire () {
-		
-		Instantiate(Instance, transform.position, transform.rotation);
-		Wait();
-	}
-
-	private IEnumerator Wait ()
-	{
-		yield return new WaitForSeconds(FireRate);
-		Fire();
+		for (;;)
+		{
+			Instantiate(Instance, transform.position, transform.rotation);
+            yield return new WaitForSeconds(FireRate);
+		}
+	
 	}
 }
