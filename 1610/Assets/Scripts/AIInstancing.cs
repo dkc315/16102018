@@ -8,6 +8,11 @@ public class AIInstancing : MonoBehaviour
 	public GameObject Instance;
 	public float FireRate;
 
+	private void Start()
+	{
+		Fire();
+	}
+
 	void Fire () {
 		
 		Instantiate(Instance, transform.position, transform.rotation);
