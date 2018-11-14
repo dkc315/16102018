@@ -243,12 +243,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 1311948971019606, guid: 8ef4775df7810d542ac0d14b1f6a972e, type: 2}
-  AltInstance: {fileID: 1311948971019606, guid: 8ef4775df7810d542ac0d14b1f6a972e,
+  AltInstance: {fileID: 1466161400990128, guid: bccfcdadf5cd846408e1e4d39f9ec7de,
     type: 2}
   Consumable: {fileID: 11400000, guid: 07a080389864e7d4f8499bac7a9868a8, type: 2}
   AltConsumable: {fileID: 11400000, guid: 492378c7daccaa2488afa9a176bacaa7, type: 2}
   ConsumeRate: {fileID: 11400000, guid: 05bfc2538162db348961d7e63579d431, type: 2}
-  AltConsumeRate: {fileID: 11400000, guid: 05bfc2538162db348961d7e63579d431, type: 2}
+  AltConsumeRate: {fileID: 11400000, guid: 39096f6dee7f69f4faabd15143fd21b5, type: 2}
   WaitTime: 0.2
 --- !u!124 &124275272276896792
 Behaviour:

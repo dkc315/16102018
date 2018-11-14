@@ -55,6 +55,7 @@
           <e p="SwitchStatments.cs" t="Include" />
           <e p="TextFlash.cs" t="Include" />
           <e p="TriggerEventBehavior.cs" t="Include" />
+          <e p="UpdateAnims.cs" t="Include" />
           <e p="UpdateImageValue.cs" t="Include" />
           <e p="UpdateTextValue.cs" t="Include" />
           <e p="WhatcanSeeIt.cs" t="Include" />
