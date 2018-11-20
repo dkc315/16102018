@@ -6,8 +6,9 @@ public class SlowMovement : MonoBehaviour
 {
 
     public GameObject Player;
-    public CharacterMover Mover;
-    public float SlowAmount, InitialSpeed;
+    private CharacterMover Mover;
+    public float SlowAmount;
+    private float InitialSpeed;
     
     private void OnTriggerEnter(Collider other)
     {

@@ -8,24 +8,42 @@ public class Instancing : MonoBehaviour
 	public FloatData Consumable, AltConsumable, ConsumeRate, AltConsumeRate;
     public float WaitTime;
    
-	void Update ()
+	void Start()
 	{
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (Consumable.Value >= ConsumeRate.Value)
-            {
-                Instantiate(Instance, transform.position, transform.rotation);
-                Consumable.Value = Consumable.Value - ConsumeRate.Value;
-            }
-        }
+		StartCoroutine(AltFire());
+		StartCoroutine(Fire());
+	}
 
-		if (Input.GetMouseButton(1))
+	IEnumerator AltFire()
+	{
+
+		while (true)
 		{
-            if (AltConsumable.Value >= AltConsumeRate.Value)
-            {
-                Instantiate(AltInstance, transform.position, transform.rotation);
-                AltConsumable.Value = AltConsumable.Value - AltConsumeRate.Value;
-            }
-        }
+			if (Input.GetMouseButton(1))
+			{
+				if (AltConsumable.Value >= AltConsumeRate.Value)
+				{
+					Instantiate(AltInstance, transform.position, transform.rotation);
+					AltConsumable.Value = AltConsumable.Value - AltConsumeRate.Value;
+					yield return null;
+				}
+			}
+		}
+	}
+
+	IEnumerator Fire()
+	{	
+		while (true)
+		{
+			if (Input.GetMouseButtonDown(0))
+			{
+				if (Consumable.Value >= ConsumeRate.Value)
+				{
+					Instantiate(Instance, transform.position, transform.rotation);
+					Consumable.Value = Consumable.Value - ConsumeRate.Value;
+					yield return null;
+				}
+			}
+		}
 	}
 }
