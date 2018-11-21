@@ -25,9 +25,10 @@ public class Instancing : MonoBehaviour
 				{
 					Instantiate(AltInstance, transform.position, transform.rotation);
 					AltConsumable.Value = AltConsumable.Value - AltConsumeRate.Value;
-					yield return null;
+					yield return new WaitForSeconds(WaitTime);
 				}
 			}
+			yield return null;
 		}
 	}
 
@@ -41,9 +42,9 @@ public class Instancing : MonoBehaviour
 				{
 					Instantiate(Instance, transform.position, transform.rotation);
 					Consumable.Value = Consumable.Value - ConsumeRate.Value;
-					yield return null;
 				}
 			}
+			yield return null;
 		}
 	}
 }
