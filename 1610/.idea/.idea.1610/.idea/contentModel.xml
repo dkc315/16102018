@@ -8,7 +8,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="ACompB.cs" t="Include" />
+          <e p="AdditionalButtonControls.cs" t="Include" />
           <e p="AIInstancing.cs" t="Include" />
           <e p="BasicAI.cs" t="Include" />
           <e p="CharacterMover.cs" t="Include" />
@@ -22,6 +22,7 @@
               <e p="PowerUp.cs" t="Include" />
             </e>
           </e>
+          <e p="GameSaveData.cs" t="Include" />
           <e p="GameStates.cs" t="Include" />
           <e p="IfStatments.cs" t="Include" />
           <e p="Instancing.cs" t="Include" />
