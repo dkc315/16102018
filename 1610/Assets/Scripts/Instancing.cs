@@ -6,7 +6,7 @@ public class Instancing : MonoBehaviour
 {
 	public GameObject Instance, AltInstance;
 	public FloatData Consumable, AltConsumable, ConsumeRate, AltConsumeRate;
-    public float WaitTime;
+    public float AltWaitTime, WaitTime;
    
 	void Start()
 	{
@@ -19,14 +19,11 @@ public class Instancing : MonoBehaviour
 
 		while (true)
 		{
-			if (Input.GetMouseButton(1))
+			if (Input.GetMouseButton(1) && AltConsumable.Value >= AltConsumeRate.Value)
 			{
-				if (AltConsumable.Value >= AltConsumeRate.Value)
-				{
-					Instantiate(AltInstance, transform.position, transform.rotation);
-					AltConsumable.Value = AltConsumable.Value - AltConsumeRate.Value;
-					yield return new WaitForSeconds(WaitTime);
-				}
+				Instantiate(AltInstance, transform.position, transform.rotation);
+				AltConsumable.Value = AltConsumable.Value - AltConsumeRate.Value;
+				yield return new WaitForSeconds(AltWaitTime);
 			}
 			yield return null;
 		}
@@ -36,13 +33,11 @@ public class Instancing : MonoBehaviour
 	{	
 		while (true)
 		{
-			if (Input.GetMouseButtonDown(0))
+			if (Input.GetMouseButtonDown(0) && Consumable.Value >= ConsumeRate.Value)
 			{
-				if (Consumable.Value >= ConsumeRate.Value)
-				{
-					Instantiate(Instance, transform.position, transform.rotation);
-					Consumable.Value = Consumable.Value - ConsumeRate.Value;
-				}
+				Instantiate(Instance, transform.position, transform.rotation);
+				Consumable.Value = Consumable.Value - ConsumeRate.Value;
+				yield return new WaitForSeconds(WaitTime);
 			}
 			yield return null;
 		}
