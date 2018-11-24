@@ -7,6 +7,7 @@ public class Instancing : MonoBehaviour
 	public GameObject Instance, AltInstance;
 	public FloatData Consumable, AltConsumable, ConsumeRate, AltConsumeRate;
     public float AltWaitTime, WaitTime;
+	public bool PauseToggle;
    
 	void Start()
 	{
@@ -19,7 +20,7 @@ public class Instancing : MonoBehaviour
 
 		while (true)
 		{
-			if (Input.GetMouseButton(1) && AltConsumable.Value >= AltConsumeRate.Value)
+			if (PauseToggle == false && Input.GetMouseButton(1) && AltConsumable.Value >= AltConsumeRate.Value)
 			{
 				Instantiate(AltInstance, transform.position, transform.rotation);
 				AltConsumable.Value = AltConsumable.Value - AltConsumeRate.Value;
@@ -33,7 +34,7 @@ public class Instancing : MonoBehaviour
 	{	
 		while (true)
 		{
-			if (Input.GetMouseButtonDown(0) && Consumable.Value >= ConsumeRate.Value)
+			if (PauseToggle == false && Input.GetMouseButtonDown(0) && Consumable.Value >= ConsumeRate.Value)
 			{
 				Instantiate(Instance, transform.position, transform.rotation);
 				Consumable.Value = Consumable.Value - ConsumeRate.Value;
