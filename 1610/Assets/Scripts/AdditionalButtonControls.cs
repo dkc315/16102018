@@ -8,12 +8,14 @@ public class AdditionalButtonControls : MonoBehaviour
     public Canvas PauseMenu;
     private Instancing playerWeapon;
     private CharacterMover playerMover;
+    public bool Paused;
 
     private void Start()
     {
         playerWeapon = GetComponentInChildren<Instancing>();
         playerMover = GetComponent<CharacterMover>();
         PauseMenu.enabled = false;
+        Paused = false;
 
         StartCoroutine(PauseMenuStart());
     }
@@ -25,30 +27,36 @@ public class AdditionalButtonControls : MonoBehaviour
 
     IEnumerator PauseMenuStart()
     {
-        while (true)
+        while (!Paused)
         {
             if (Input.GetKey(KeyCode.Escape))
             {
                 PauseMenu.enabled = true;
                 playerWeapon.PauseToggle = true;
                 playerMover.enabled = false;
-                yield return new WaitForSeconds(2);
-                StartCoroutine(PauseMenuStop());
+                yield return new WaitForSeconds(1);
+                Paused = true;
+                print("1");
             }
+            
             yield return null;
         }
+
+        StartCoroutine(PauseMenuStop());
     }
 
     IEnumerator PauseMenuStop()
     {
-        while (true)
+        while (Paused)
         {
             if (Input.GetKey(KeyCode.Escape))
             {
                 PauseMenu.enabled = false;
                 playerWeapon.PauseToggle = false;
                 playerMover.enabled = true;
-                StopCoroutine(PauseMenuStop());
+                yield return new WaitForSeconds(1);
+                Paused = false;
+                print("2");
             }
             yield return null;
         }

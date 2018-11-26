@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterMover : MonoBehaviour
+public class CharacterMover2D : MonoBehaviour
 {
-
 	private CharacterController controller;
 	public float Gravity;
 	public float MoveSpeed;
 	public float JumpSpeed;
-	private Vector3 position, rotation;
+	private Vector3 position;
 	
 	void Start ()
 	{
@@ -20,16 +19,12 @@ public class CharacterMover : MonoBehaviour
 	{
 		position.y -= Gravity * Time.deltaTime;
 		controller.Move(position * Time.deltaTime);
-
-		rotation.Set(0, Input.GetAxis("Horizontal"), 0);
-		transform.Rotate(rotation);
-		
 		
 		if (controller.isGrounded)
-		{
-			position.Set(0, 0, MoveSpeed * Input.GetAxis("Vertical"));
-            position = transform.TransformDirection(position);
-			
+		{	
+			position = transform.TransformDirection(position);
+			//position.Set(MoveSpeed * Input.GetAxis("Horizontal"), 0, 0);
+			position.x = MoveSpeed * Input.GetAxis("Horizontal");
 			if (Input.GetButton("Jump"))
 			{
 				position.y = JumpSpeed;
