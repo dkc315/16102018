@@ -32,7 +32,23 @@ public class AdditionalButtonControls : MonoBehaviour
                 PauseMenu.enabled = true;
                 playerWeapon.PauseToggle = true;
                 playerMover.enabled = false;
-                yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(2);
+                StartCoroutine(PauseMenuStop());
+            }
+            yield return null;
+        }
+    }
+
+    IEnumerator PauseMenuStop()
+    {
+        while (true)
+        {
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                PauseMenu.enabled = false;
+                playerWeapon.PauseToggle = false;
+                playerMover.enabled = true;
+                StopCoroutine(PauseMenuStop());
             }
             yield return null;
         }
