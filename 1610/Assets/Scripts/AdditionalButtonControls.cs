@@ -18,6 +18,7 @@ public class AdditionalButtonControls : MonoBehaviour
         Paused = false;
 
         StartCoroutine(PauseMenuStart());
+        StartCoroutine(PauseMenuStop());
     }
 
     private void Update()
@@ -27,34 +28,32 @@ public class AdditionalButtonControls : MonoBehaviour
 
     IEnumerator PauseMenuStart()
     {
-        while (!Paused)
+        while (true)
         {
-            if (Input.GetKey(KeyCode.Escape))
+            if (Input.GetKey(KeyCode.Escape) && !Paused)
             {
                 PauseMenu.enabled = true;
                 playerWeapon.PauseToggle = true;
                 playerMover.enabled = false;
-                yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(0.2f);
                 Paused = true;
                 print("1");
             }
             
             yield return null;
         }
-
-        StartCoroutine(PauseMenuStop());
     }
 
     IEnumerator PauseMenuStop()
     {
-        while (Paused)
+        while (true)
         {
-            if (Input.GetKey(KeyCode.Escape))
+            if (Input.GetKey(KeyCode.Escape) && Paused)
             {
                 PauseMenu.enabled = false;
                 playerWeapon.PauseToggle = false;
                 playerMover.enabled = true;
-                yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(0.2f);
                 Paused = false;
                 print("2");
             }
