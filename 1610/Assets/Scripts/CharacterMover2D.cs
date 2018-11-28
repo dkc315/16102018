@@ -8,7 +8,7 @@ public class CharacterMover2D : MonoBehaviour
 	public float Gravity;
 	public float MoveSpeed;
 	public float JumpSpeed;
-	private Vector3 position;
+	private Vector3 position, rotation;
 	
 	void Start ()
 	{
@@ -30,5 +30,16 @@ public class CharacterMover2D : MonoBehaviour
 				position.y = JumpSpeed;
 			}
 		}
+		if (Input.GetKey(KeyCode.A))
+		{
+			transform.Rotate(0, 180, 0);
+		}
+
+		if (Input.GetKey(KeyCode.D))
+		{
+			
+		}
+	
 	}
+
 }
