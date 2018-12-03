@@ -233,7 +233,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Instance: {fileID: 1572573249727076, guid: 4f3bc8d801d5be24faa5e4665c472d30, type: 2}
-  AltInstance: {fileID: 0}
+  AltInstance: {fileID: 1276842891832140, guid: 115564e5e5b505242816dbab69b66440,
+    type: 2}
   Consumable: {fileID: 11400000, guid: 07a080389864e7d4f8499bac7a9868a8, type: 2}
   AltConsumable: {fileID: 11400000, guid: 492378c7daccaa2488afa9a176bacaa7, type: 2}
   ConsumeRate: {fileID: 11400000, guid: 05bfc2538162db348961d7e63579d431, type: 2}
@@ -789,11 +790,11 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1745998876}
-  m_LocalRotation: {x: -0, y: -0, z: 0.018084425, w: 0.9998365}
+  m_LocalRotation: {x: -0, y: -0, z: -0.00025223242, w: 1}
   m_LocalPosition: {x: 0.09, y: 1.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 583346949}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.072}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.029000001}

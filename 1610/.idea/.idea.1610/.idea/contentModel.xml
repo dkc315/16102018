@@ -15,6 +15,7 @@
           <e p="CharacterMover2D.cs" t="Include" />
           <e p="CollisionEnterEvent.cs" t="Include" />
           <e p="DestroyObject.cs" t="Include" />
+          <e p="DestroyOther.cs" t="Include" />
           <e p="EventRepeat.cs" t="Include" />
           <e p="Float Data" t="Include">
             <e p="AddValue.cs" t="Include" />
