@@ -34,10 +34,10 @@ public class Instancing : MonoBehaviour
 	{	
 		while (true)
 		{
-			if (PauseToggle == false && Input.GetMouseButtonDown(0) && Consumable.Value >= ConsumeRate.Value)
+			if (PauseToggle == false && Input.GetMouseButtonDown(0) /*&& Consumable.Value >= ConsumeRate.Value*/)
 			{
 				Instantiate(Instance, transform.position, transform.rotation);
-				Consumable.Value = Consumable.Value - ConsumeRate.Value;
+				//Consumable.Value = Consumable.Value - ConsumeRate.Value;
 				yield return new WaitForSeconds(WaitTime);
 			}
 			yield return null;

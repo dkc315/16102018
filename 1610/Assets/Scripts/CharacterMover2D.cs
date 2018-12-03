@@ -9,6 +9,7 @@ public class CharacterMover2D : MonoBehaviour
 	public float MoveSpeed;
 	public float JumpSpeed;
 	private Vector3 position, rotation;
+	private bool flipped;
 	
 	void Start ()
 	{
@@ -30,14 +31,17 @@ public class CharacterMover2D : MonoBehaviour
 				position.y = JumpSpeed;
 			}
 		}
-		if (Input.GetKey(KeyCode.A))
+
+		if (Input.GetKey(KeyCode.A) && !flipped)
 		{
 			transform.Rotate(0, 180, 0);
+			flipped = true;
 		}
 
-		if (Input.GetKey(KeyCode.D))
+		if (Input.GetKey(KeyCode.D) && flipped)
 		{
-			
+			transform.Rotate(0, 180, 0);
+			flipped = false;
 		}
 	
 	}
