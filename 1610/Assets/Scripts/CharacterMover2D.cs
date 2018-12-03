@@ -18,26 +18,27 @@ public class CharacterMover2D : MonoBehaviour
 	
 	void Update ()
 	{
-		position.y -= Gravity * Time.deltaTime;
-		controller.Move(position * Time.deltaTime);
+		position = transform.TransformDirection(position);
+		position.x = MoveSpeed * Input.GetAxis("Horizontal");
 		
 		if (controller.isGrounded)
 		{	
-			position = transform.TransformDirection(position);
-			//position.Set(MoveSpeed * Input.GetAxis("Horizontal"), 0, 0);
-			position.x = MoveSpeed * Input.GetAxis("Horizontal");
+
 			if (Input.GetButton("Jump"))
 			{
 				position.y = JumpSpeed;
 			}
 		}
+		
+		position.y -= Gravity * Time.deltaTime;
+		controller.Move(position * Time.deltaTime);
 
 		if (Input.GetKey(KeyCode.A) && !flipped)
 		{
 			transform.Rotate(0, 180, 0);
 			flipped = true;
 		}
-
+		
 		if (Input.GetKey(KeyCode.D) && flipped)
 		{
 			transform.Rotate(0, 180, 0);
