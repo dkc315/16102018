@@ -46,5 +46,4 @@ public class CharacterMover2D : MonoBehaviour
 		}
 	
 	}
-
 }
