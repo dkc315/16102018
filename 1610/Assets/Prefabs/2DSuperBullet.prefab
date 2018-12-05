@@ -81,6 +81,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Lifetime: 3
+  Score: {fileID: 11400000, guid: cb60a7c30c199184fbd6869441efbb07, type: 2}
 --- !u!212 &212054337678449634
 SpriteRenderer:
   m_ObjectHideFlags: 1

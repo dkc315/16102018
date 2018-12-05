@@ -35,6 +35,6 @@ public class SwitchStatments : MonoBehaviour
 			case GameStates.States.Ending:
 				
 				break;
-		}	
+		}
 	}
 }

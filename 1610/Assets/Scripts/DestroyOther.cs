@@ -6,6 +6,7 @@ public class DestroyOther : MonoBehaviour
 {
 
 	public float Lifetime;
+	public FloatData Score;
 	
 	IEnumerator Start ()
 	{
@@ -16,5 +17,6 @@ public class DestroyOther : MonoBehaviour
 	private void OnCollisionEnter(Collision other)
 	{
 		Destroy(other.gameObject);
+		Score.Value += 100;
 	}
 }

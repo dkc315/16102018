@@ -51,6 +51,7 @@
           <e p="PowerupEnum.cs" t="Include" />
           <e p="RespawnTrigger.cs" t="Include" />
           <e p="RespawnTriggerSprite.cs" t="Include" />
+          <e p="ScoreUpdate.cs" t="Include" />
           <e p="SelfDestructOnCollision.cs" t="Include" />
           <e p="SlowMovement.cs" t="Include" />
           <e p="Spawner.cs" t="Include" />
