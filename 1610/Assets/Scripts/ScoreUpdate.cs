@@ -10,6 +10,8 @@ public class ScoreUpdate : MonoBehaviour
 
 	void Start ()
 	{
+		Health.Value = 1;
+		Score.Value = 0;
 		StartCoroutine(Time());
 	}
 	

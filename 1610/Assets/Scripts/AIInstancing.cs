@@ -12,8 +12,9 @@ public class AIInstancing : MonoBehaviour
 	{
 		for (;;)
 		{
+			yield return new WaitForSeconds(FireRate);
 			Instantiate(Instance, transform.position, transform.rotation);
-            yield return new WaitForSeconds(FireRate);
+
 		}
 	
 	}

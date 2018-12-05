@@ -7,6 +7,7 @@ public class BasicAI : MonoBehaviour
 {
 	private NavMeshAgent agent;
 	public Transform Destination;
+	public GameAction Action;
 	
 	void Start ()
 	{

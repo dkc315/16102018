@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114044381778316598}
   - component: {fileID: 54964847815627632}
   - component: {fileID: 75981480315258634}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: 2DEnemyBulletH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ ConstantForce:
   m_GameObject: {fileID: 1112259381321492}
   m_Enabled: 1
   m_Force: {x: 0, y: 0, z: 0}
-  m_RelativeForce: {x: 60, y: 0, z: 0}
+  m_RelativeForce: {x: -60, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!114 &114044381778316598
