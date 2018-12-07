@@ -7,16 +7,14 @@ public class ScoreUpdate : MonoBehaviour
 
 	public FloatData Score;
 	public FloatData Health;
+	public FloatData AltAmmo;
 
 	void Start ()
 	{
 		Health.Value = 1;
 		Score.Value = 0;
+		AltAmmo.Value = 0;
 		StartCoroutine(Time());
-	}
-	
-	void Update () {
-		
 	}
 
 	private IEnumerator Time()
