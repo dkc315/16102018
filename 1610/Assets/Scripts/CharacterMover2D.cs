@@ -20,7 +20,7 @@ public class CharacterMover2D : MonoBehaviour
 	{
 		position = transform.TransformDirection(position);
 		position.x = MoveSpeed * Input.GetAxis("Horizontal");
-		
+
 		if (controller.isGrounded)
 		{	
 
@@ -44,6 +44,5 @@ public class CharacterMover2D : MonoBehaviour
 			transform.Rotate(0, 180, 0);
 			flipped = false;
 		}
-	
 	}
 }
