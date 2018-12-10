@@ -6,7 +6,7 @@ public class DestroyObject : MonoBehaviour
 {
 
 	public float Lifetime;
-	public FloatData Score;
+	public FloatData Score, Health;
 	
 	IEnumerator Start ()
 	{
@@ -18,6 +18,9 @@ public class DestroyObject : MonoBehaviour
 	{
 		Destroy(gameObject);
 		Destroy(other.gameObject);
-		Score.Value += 100;
+		if (Health.Value > 0)
+		{
+			Score.Value += 100;
+		}
 	}
 }

@@ -83,6 +83,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Lifetime: 3
   Score: {fileID: 11400000, guid: cb60a7c30c199184fbd6869441efbb07, type: 2}
+  Health: {fileID: 11400000, guid: f4eb8de9733af4845b06174e45e24777, type: 2}
 --- !u!135 &135669381385443412
 SphereCollider:
   m_ObjectHideFlags: 1

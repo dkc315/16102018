@@ -20,6 +20,7 @@ public class CharacterMover2D : MonoBehaviour
 	{
 		position = transform.TransformDirection(position);
 		position.x = MoveSpeed * Input.GetAxis("Horizontal");
+		position.z = 0;
 
 		if (controller.isGrounded)
 		{	
